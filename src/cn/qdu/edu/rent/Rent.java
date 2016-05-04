@@ -64,13 +64,20 @@ public class Rent {
 			default:
 				break;
 			}
-		for (int j = 0; j < num; j++) {
-			total=total+(int)vehicle[i][2];
+		
 		}
-		System.out.println("您的总花费是："+total);
-	}}}
+	}for (int j = 0; j < num; j++) {
+		total=total+(int)vehicle[j][2];
+	System.out.println("您的总花费是："+total);
+		}
+		}
 	
 	public static void main(String[] args) {
-		new Rent().rentMoto();
+		String str="";
+		do{new Rent().rentMoto();
+		System.out.println("是否继续？(y/n)");
+		Scanner input=new Scanner(System.in);
+		str=input.next();	
+		}while(str.equals("y"));
 	}
 }
