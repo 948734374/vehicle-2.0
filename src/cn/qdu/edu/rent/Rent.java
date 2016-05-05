@@ -68,8 +68,8 @@ public class Rent {
 		}
 	}for (int j = 0; j < num; j++) {
 		total=total+(int)vehicle[j][2];
-	System.out.println("您的总花费是："+total);
-		}
+	
+		}System.out.println("您的总花费是："+total);
 		}
 	
 	public static void main(String[] args) {
